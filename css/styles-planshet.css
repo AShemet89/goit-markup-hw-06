@@ -186,15 +186,18 @@
   }
 
   .main-services {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .description-main {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .description-items {
-    flex-basis: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 2);
   }
   .icons-container {
     display: flex;
@@ -205,28 +208,31 @@
     border-radius: 4px;
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
+    display: none;
   }
   .description {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
+    text-transform: capitalize;
+    text-align: justify;
   }
   .description-list {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 150%;
     letter-spacing: 0.02em;
-    color: #434455;
   }
   /*Our Team_3_секція*/
 
   .staff {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: #f4f4fd;
+  }
+  .staff > .container {
+    width: 584px;
   }
   .employees {
     margin-bottom: 72px;
@@ -240,12 +246,15 @@
     color: #2e2f42;
   }
   .employees-list {
-    display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px 24px;
+    padding-left: 0;
+    margin: 0;
   }
   .employees-item {
     background-color: #ffffff;
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -303,8 +312,8 @@
   /*Our Portfolio_4_секція*/
 
   .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .labor {
     margin-bottom: 72px;
@@ -321,11 +330,14 @@
   .labor-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 72px 24px;
+    padding-left: 0;
+    margin: 0;
+    flex-direction: row;
   }
   .labor-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: calc((100% - 24px) / 2);
   }
   .labor-item:hover .text-cover {
     transform: translateY(0%);
@@ -374,17 +386,24 @@
     color: #434455;
   }
   /*Footer*/
+
   .footer {
-    padding: 100px 0;
+    padding: 96px 0;
     background-color: #2e2f42;
+  }
+  .logo-media-fut {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: baseline;
+    width: 584px;
   }
   .logo-media {
     display: flex;
     align-items: baseline;
   }
-  .logo-unit {
-    margin-right: 120px;
-  }
+
   .unit-logo-web {
     display: inline-block;
     margin-bottom: 16px;
@@ -419,7 +438,7 @@
     color: #f4f4fd;
   }
   .media {
-    margin-right: 80px;
+    display: inline-block;
   }
   .social-media {
     font-weight: 500;
@@ -451,7 +470,15 @@
   .media-link:focus {
     background-color: #31d0aa;
   }
-
+  .fslling {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .sabscribe {
+    display: inline-block;
+    align-self: start;
+  }
   .sabscribe {
     margin-bottom: 16px;
     font-weight: 500;
@@ -462,7 +489,7 @@
   }
   .sabscribe-form {
     display: flex;
-    gap: 24px;
+    flex-direction: row;
   }
   .sabscribe-input {
     width: 264px;
