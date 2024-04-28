@@ -424,7 +424,8 @@ body {
 }
 
 .unit-logo-web {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 16px;
 }
 .unit-logo-web {
@@ -508,6 +509,7 @@ body {
   display: flex;
   gap: 24px;
   flex-direction: column;
+  align-items: center;
 }
 .sabscribe-input {
   width: 264px;
