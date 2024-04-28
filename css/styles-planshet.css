@@ -696,9 +696,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     fill: transparent;
   }
-  .modal-check:checked + .modal-privacy span {
+  .modal-check:checked + .modal-privacy .privacy-policy {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
