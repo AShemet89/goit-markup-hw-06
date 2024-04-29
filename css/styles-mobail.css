@@ -29,6 +29,8 @@ a {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -416,6 +418,11 @@ body {
   padding: 96px 0;
   background-color: #2e2f42;
 }
+.logo-media-fut {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
 .logo-media {
   display: flex;
   flex-direction: column;
@@ -448,7 +455,6 @@ body {
 }
 .unit-list {
   max-width: 264px;
-  padding-bottom: 72px;
 }
 .unit-list {
   font-family: "Roboto", sans-serif;
@@ -475,7 +481,6 @@ body {
 .social-media-list {
   display: flex;
   gap: 16px;
-  padding-bottom: 72px;
 }
 .social-media-item {
   width: 40px;
